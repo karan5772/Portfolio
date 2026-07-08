@@ -51,9 +51,39 @@ export const data = {
       description:
         "Vedic astrology platform powered by AI. Generates a full sidereal birth chart from your birth date, time, and location, then lets you ask anything — via text or real-time voice — with answers grounded in your actual planetary positions.",
       tags: ["Next.js", "OpenAI", "Voice AI", "Vedic Charts", "Real-time"],
+      categories: ["ai", "fullstack"],
       liveUrl: "https://astro.karanchoudhary.dev",
       repoUrl: null,
-      featured: true,
+    },
+    {
+      title: "Basant Event Ticketing",
+      image: "/projects/basant.png",
+      description:
+        "Production ticketing system for BKBIET's annual cultural festival. Three-part system: a user-facing ticket booking portal, an admin dashboard for inventory and sales management, and a scanner app for real-time entry verification at the gate.",
+      tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+      categories: ["freelance"],
+      liveUrl: "https://bkbietbasant.in",
+      repoUrl: null,
+    },
+    {
+      title: "BKBIHE College Website",
+      image: "https://bkbihe.vercel.app/og.png",
+      description:
+        "Complete institutional website covering 15+ pages — admissions, academics, faculty directory, infrastructure, research journal, and an AI-powered admission enquiry using Google Gemini.",
+      tags: ["React.js", "TypeScript", "Google Gemini", "Tailwind CSS"],
+      categories: ["freelance"],
+      liveUrl: "https://bkbihe.vercel.app",
+      repoUrl: null,
+    },
+    {
+      title: "Loop Moto India",
+      image: "https://loopmoto.vercel.app/og.png",
+      description:
+        "Product and marketing website for an ARAI-certified EV retrofitting company. Showcases electric retrofit kits for cycles, bikes, and commercial vehicles with specs, turnkey solutions, and a pan-India service network.",
+      tags: ["React.js", "Vite", "CSS"],
+      categories: ["freelance"],
+      liveUrl: "https://loopmoto.vercel.app",
+      repoUrl: null,
     },
     {
       title: "MyTute AI",
@@ -62,8 +92,8 @@ export const data = {
       description:
         "RAG-based AI tutor that answers questions from user PDFs and YouTube transcripts using OpenAI and Qdrant. Features per-user ephemeral collections with session-based isolation and auto-clear on exit.",
       tags: ["React.js", "Node.js", "Express.js", "OpenAI", "LangChain", "Qdrant DB", "Clerk Auth"],
+      categories: ["ai", "fullstack"],
       repoUrl: "https://github.com/karan5772/mytute",
-      featured: true,
     },
     {
       title: "Repo Review",
@@ -72,18 +102,18 @@ export const data = {
       description:
         "AI-powered code review assistant that analyzes GitHub repositories using LLMs to provide actionable feedback, identify bugs, and visualize code quality metrics.",
       tags: ["React.js", "Node.js", "Express.js", "OpenAI SDK", "CodeMirror"],
+      categories: ["ai"],
       repoUrl: "https://github.com/karan5772/ai-revierer",
-      featured: false,
     },
     {
       title: "DSASnippets",
       image:
         "https://github.com/karan5772/dsasnippets/blob/main/Screenshot%202025-12-08%20at%203.57.16%E2%80%AFPM.png?raw=true",
       description:
-        "Coding practice platform supporting multiple programming languages with Judge0 for real-time code execution and AI-generated coding problems.",
-      tags: ["MERN", "Judge0", "Docker", "PostgreSQL"],
+        "Coding platform where creators build problems and coders solve them. AI-generated problems, real-time code execution via Judge0, premium playlists, leaderboards, and daily streaks.",
+      tags: ["React.js", "Node.js", "PostgreSQL", "Judge0", "Docker"],
+      categories: ["fullstack"],
       repoUrl: "https://github.com/karan5772/dsasnippets",
-      featured: false,
     },
     {
       title: "QuizApp",
@@ -92,8 +122,8 @@ export const data = {
       description:
         "Full-stack platform for coding and MCQ-based quizzes with analytics and performance tracking for students and educators.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+      categories: ["freelance", "fullstack"],
       repoUrl: "https://github.com/karan5772/quizApp",
-      featured: false,
     },
     {
       title: "Agentic CLI Dev Tool",
@@ -102,8 +132,35 @@ export const data = {
       description:
         "AI-powered CLI that acts as a developer agent, inspired by Cursor, using the start→plan→act→observe loop. Capable of autonomously generating full-stack apps from natural language.",
       tags: ["Node.js", "JavaScript", "OpenAI"],
+      categories: ["ai"],
       repoUrl: "https://github.com/karan5772/codingAgent",
-      featured: false,
+    },
+    {
+      title: "College Grievance Portal",
+      image: "/projects/college-portal.jpg",
+      description:
+        "Full-stack platform bridging the communication gap between students and faculty. Students raise grievances, faculty address them — with transparent status tracking and admin oversight throughout.",
+      tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+      categories: ["freelance", "fullstack"],
+      repoUrl: "https://github.com/karan5772/college-resolutation-portel",
+    },
+    {
+      title: "X → Notion Extension",
+      image: null,
+      description:
+        "Chrome extension (v1.3) that adds a one-click button on x.com to send any tweet directly to your Notion database. Uses the Notion API with a background service worker and content script injection.",
+      tags: ["Chrome Extension", "JavaScript", "Notion API"],
+      categories: ["fullstack"],
+      repoUrl: "https://github.com/karan5772/Twitter-X--Notion",
+    },
+    {
+      title: "Chai With AI Buddies",
+      image: null,
+      description:
+        "Chat UI where you pick an AI persona — Hitesh Choudhary or Piyush Garg — and have a conversation in their voice. Frontend in vanilla HTML/CSS/JS; backend in Node.js using Google Gemini.",
+      tags: ["Node.js", "Express.js", "Google Gemini", "JavaScript"],
+      categories: ["ai"],
+      repoUrl: "https://github.com/karan5772/Ai-Persona-Assistant",
     },
   ],
 
