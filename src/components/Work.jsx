@@ -52,25 +52,48 @@ export default function Work() {
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: '1.25rem' }}>
                   {p.tags.map(t => <span key={t} className="tag">{t}</span>)}
                 </div>
-                {p.repoUrl && (
-                  <a
-                    href={p.repoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: 'inline-flex', alignItems: 'center', gap: 7,
-                      fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.82rem', fontWeight: 600,
-                      color: '#2A6049', textDecoration: 'none',
-                      borderBottom: '1px solid rgba(42,96,73,0.25)',
-                      paddingBottom: '1px', transition: 'border-color 0.18s, color 0.18s',
-                    }}
-                    onMouseEnter={e => { e.currentTarget.style.borderBottomColor = '#2A6049'; }}
-                    onMouseLeave={e => { e.currentTarget.style.borderBottomColor = 'rgba(42,96,73,0.25)'; }}
-                  >
-                    <BrandSvg icon={siGithub} size={13} />
-                    View on GitHub
-                  </a>
-                )}
+                <div style={{ display: 'flex', gap: '1.25rem', flexWrap: 'wrap' }}>
+                  {p.liveUrl && (
+                    <a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-flex', alignItems: 'center', gap: 7,
+                        fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.82rem', fontWeight: 600,
+                        color: '#2A6049', textDecoration: 'none',
+                        borderBottom: '1px solid rgba(42,96,73,0.25)',
+                        paddingBottom: '1px', transition: 'border-color 0.18s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderBottomColor = '#2A6049'; }}
+                      onMouseLeave={e => { e.currentTarget.style.borderBottomColor = 'rgba(42,96,73,0.25)'; }}
+                    >
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                      </svg>
+                      Live Site
+                    </a>
+                  )}
+                  {p.repoUrl && (
+                    <a
+                      href={p.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-flex', alignItems: 'center', gap: 7,
+                        fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.82rem', fontWeight: 600,
+                        color: '#2A6049', textDecoration: 'none',
+                        borderBottom: '1px solid rgba(42,96,73,0.25)',
+                        paddingBottom: '1px', transition: 'border-color 0.18s',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.borderBottomColor = '#2A6049'; }}
+                      onMouseLeave={e => { e.currentTarget.style.borderBottomColor = 'rgba(42,96,73,0.25)'; }}
+                    >
+                      <BrandSvg icon={siGithub} size={13} />
+                      View on GitHub
+                    </a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

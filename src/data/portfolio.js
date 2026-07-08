@@ -46,6 +46,16 @@ export const data = {
 
   projects: [
     {
+      title: "Astro AI",
+      image: "https://astro.karanchoudhary.dev/og.png",
+      description:
+        "Vedic astrology platform powered by AI. Generates a full sidereal birth chart from your birth date, time, and location, then lets you ask anything — via text or real-time voice — with answers grounded in your actual planetary positions.",
+      tags: ["Next.js", "OpenAI", "Voice AI", "Vedic Charts", "Real-time"],
+      liveUrl: "https://astro.karanchoudhary.dev",
+      repoUrl: null,
+      featured: true,
+    },
+    {
       title: "MyTute AI",
       image:
         "https://raw.githubusercontent.com/karan5772/MyTute/refs/heads/main/frontend/public/Screenshot1.png",
