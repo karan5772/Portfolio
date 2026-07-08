@@ -57,7 +57,7 @@ export const data = {
     },
     {
       title: "Basant Event Ticketing",
-      image: "/projects/basant.png",
+      image: "https://bkbietbasant.in/BASANT.png",
       description:
         "Production ticketing system for BKBIET's annual cultural festival. Three-part system: a user-facing ticket booking portal, an admin dashboard for inventory and sales management, and a scanner app for real-time entry verification at the gate.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
