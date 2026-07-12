@@ -56,6 +56,16 @@ export const data = {
       repoUrl: null,
     },
     {
+      title: "Invoice Generator for Indian Freelancers",
+      image: "https://invoice.karanchoudhary.dev/opengraph-image",
+      description:
+        "Free, GST-aware invoice generator for Indian freelancers. Handles CGST/SGST vs IGST automatically, PAN-only invoices without a GSTIN, exports under LUT, TDS notes, and real vector PDF downloads. No sign-up — data never leaves the browser.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "react-pdf", "GST"],
+      categories: ["fullstack"],
+      liveUrl: "https://invoice.karanchoudhary.dev",
+      repoUrl: "https://github.com/karan5772/InvoiceGenerator",
+    },
+    {
       title: "Basant Event Ticketing",
       image: "https://bkbietbasant.in/BASANT.png",
       description:
