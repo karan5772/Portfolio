@@ -57,7 +57,7 @@ export const data = {
     },
     {
       title: "Invoice Generator for Indian Freelancers",
-      image: "https://invoice.karanchoudhary.dev/opengraph-image",
+      image: "https://invoice.karanchoudhary.dev/portfolio-image",
       description:
         "Free, GST-aware invoice generator for Indian freelancers. Handles CGST/SGST vs IGST automatically, PAN-only invoices without a GSTIN, exports under LUT, TDS notes, and real vector PDF downloads. No sign-up — data never leaves the browser.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "react-pdf", "GST"],
