@@ -9,6 +9,10 @@ const socialLinks = [
   { key: 'hashnode', handle: 'hashnode.com/@karan5772' },
 ]
 
+// Pre-filled so a prospect never faces a blank email
+const MAILTO = `mailto:${data.email}?subject=${encodeURIComponent('Project enquiry — via karanchoudhary.dev')}&body=${encodeURIComponent('Hi Karan,\n\nWhat I need built: \nTimeline: \nBudget range (optional): \n')}`
+const WHATSAPP = `https://wa.me/${data.phone.replace('+', '')}?text=${encodeURIComponent('Hi Karan, found you via karanchoudhary.dev — I have a project to discuss.')}`
+
 export default function Contact() {
   return (
     <section id="contact" className="sec px" style={{ background: '#0C0C0C' }}>
@@ -31,11 +35,11 @@ export default function Contact() {
             </h2>
 
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: '#7A7A7A', maxWidth: '38ch', marginBottom: '2.5rem' }}>
-              Available for freelance projects, contract work, and full-time roles. Drop me a line — I respond within 24 hours.
+              Available for freelance projects, contract work, and full-time roles. Tell me what you're building and when you need it — I reply within 24 hours.
             </p>
 
             <a
-              href={`mailto:${data.email}`}
+              href={MAILTO}
               style={{
                 display: 'inline-block',
                 fontFamily: "'Space Grotesk', sans-serif",
@@ -77,6 +81,23 @@ export default function Contact() {
               <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.9rem', fontWeight: 500, color: 'inherit' }}>{data.phone}</span>
             </a>
 
+            {/* WhatsApp */}
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)',
+                textDecoration: 'none', color: '#6A6A6A', transition: 'color 0.18s',
+              }}
+              onMouseEnter={e => e.currentTarget.style.color = '#25D366'}
+              onMouseLeave={e => e.currentTarget.style.color = '#6A6A6A'}
+            >
+              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'inherit' }}>WhatsApp</span>
+              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.9rem', fontWeight: 500, color: 'inherit' }}>Chat instantly</span>
+            </a>
+
             {/* Location */}
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
               <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6A6A6A' }}>Location</span>
@@ -112,7 +133,7 @@ export default function Contact() {
             })}
 
             <div style={{ paddingTop: '2rem' }}>
-              <a href={`mailto:${data.email}`} className="btn-amber">
+              <a href={MAILTO} className="btn-amber">
                 Send a message
               </a>
             </div>
