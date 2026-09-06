@@ -46,6 +46,16 @@ export const data = {
 
   projects: [
     {
+      title: "LinkRevive",
+      image: "https://linkrevive.karanchoudhary.dev/og.png",
+      description:
+        "SaaS that scans a YouTube channel's video descriptions for dead, untagged, and redirected affiliate links and estimates the yearly commission they cost. Free scan of the newest videos, a paid full report priced by catalog size, and weekly monitoring. Dual payments (Razorpay for INR, Dodo for USD), Clerk auth, and headless link re-checking.",
+      tags: ["React.js", "Vite", "TypeScript", "Express.js", "MongoDB", "YouTube API", "Razorpay"],
+      categories: ["fullstack"],
+      liveUrl: "https://linkrevive.karanchoudhary.dev",
+      repoUrl: null,
+    },
+    {
       title: "Astro AI",
       image: "https://astro.karanchoudhary.dev/og.png",
       description:
@@ -93,6 +103,26 @@ export const data = {
       tags: ["React.js", "Vite", "CSS"],
       categories: ["freelance"],
       liveUrl: "https://loopmoto.vercel.app",
+      repoUrl: null,
+    },
+    {
+      title: "The Bliss Hotel",
+      image: "https://thebliss-hotel.vercel.app/opengraph-image.jpg",
+      description:
+        "Luxury hotel website for a property in Pilani, Rajasthan. Deluxe rooms and premium suites with an availability checker and booking flow, a multi-cuisine restaurant and rooftop bar, a 500+ capacity conference hall, photo gallery, guest ratings, and a nearby-attractions guide.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
+      categories: ["freelance"],
+      liveUrl: "https://thebliss-hotel.vercel.app",
+      repoUrl: null,
+    },
+    {
+      title: "Shree Anupam Hotel & Resort",
+      image: "https://anupam-six.vercel.app/opengraph-image.png",
+      description:
+        "Website for a hotel, banquet, and farmhouse property in Chirawa, Rajasthan. Three room categories with live availability, an event enquiry and quote system for weddings and corporate offsites, a private farmhouse with heated pool, in-house Rajasthani and multi-cuisine dining, photo gallery, and testimonials.",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
+      categories: ["freelance"],
+      liveUrl: "https://anupam-six.vercel.app",
       repoUrl: null,
     },
     {
