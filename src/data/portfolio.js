@@ -46,6 +46,16 @@ export const data = {
 
   projects: [
     {
+      title: "Peppershelf",
+      image: "https://peppered.karankumar8239.workers.dev/og/og-default.jpg",
+      description:
+        "A shelf for romance and romantasy readers: rate a book's spice out of five peppers, tag it from forty-five tropes, and download a story-sized card to post. Ships a 199-book catalogue, a public profile page, Goodreads and StoryGraph import, per-URL SEO across every trope and title, and an animated year-end recap exported to MP4 in the browser.",
+      tags: ["Astro", "Svelte 5", "Cloudflare Workers", "D1", "Clerk", "Dodo Payments", "Tailwind 4"],
+      categories: ["fullstack"],
+      liveUrl: "https://peppered.karankumar8239.workers.dev",
+      repoUrl: null,
+    },
+    {
       title: "LinkRevive",
       image: "https://linkrevive.karanchoudhary.dev/og.png",
       description:
