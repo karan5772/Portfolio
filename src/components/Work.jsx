@@ -13,7 +13,16 @@ const FILTERS = [
 
 function ProjectImage({ project }) {
   if (project.image) {
-    return <img src={project.image} alt={project.title} draggable={false} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    return (
+      <img
+        src={project.image}
+        alt={project.title}
+        loading="lazy"
+        decoding="async"
+        draggable={false}
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+      />
+    )
   }
   return (
     <div style={{
@@ -101,7 +110,7 @@ export default function Work() {
                 {/* Image — alternates side */}
                 <div
                   className="proj-alt-img"
-                  style={{ order: i % 2 === 0 ? 0 : 1 }}
+                  style={{ order: i % 2 === 0 ? 0 : 1, aspectRatio: p.imageAspect || '16 / 10' }}
                 >
                   <ProjectImage project={p} />
                 </div>

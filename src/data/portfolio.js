@@ -4,8 +4,7 @@ export const data = {
   location: "India",
   summary:
     "Freelance MERN Stack & Gen AI developer. I build full-stack web apps, AI-powered tools, and REST APIs — from idea to deployment. B.Tech Computer Engineering graduate, BKBIET Pilani, 2026.",
-  profileImage:
-    "https://github.com/karan5772/MyTute/blob/main/frontend/public/KaranKumar.jpg?raw=true",
+  profileImage: "/karan-kumar.jpg",
   email: "karankumar8239@gmail.com",
   phone: "+916350320901",
   resumeUrl:
@@ -47,7 +46,8 @@ export const data = {
   projects: [
     {
       title: "Peppershelf",
-      image: "https://peppered.karankumar8239.workers.dev/og/og-default.jpg",
+      image: "/projects/peppershelf-og.jpg",
+      imageAspect: "1200 / 630",
       description:
         "A shelf for romance and romantasy readers: rate a book's spice out of five peppers, tag it from forty-five tropes, and download a story-sized card to post. Ships a 199-book catalogue, a public profile page, Goodreads and StoryGraph import, per-URL SEO across every trope and title, and an animated year-end recap exported to MP4 in the browser.",
       tags: ["Astro", "Svelte 5", "Cloudflare Workers", "D1", "Clerk", "Dodo Payments", "Tailwind 4"],
@@ -57,7 +57,8 @@ export const data = {
     },
     {
       title: "LinkRevive",
-      image: "https://linkrevive.karanchoudhary.dev/og.png",
+      image: "/projects/linkrevive-og.png",
+      imageAspect: "1200 / 630",
       description:
         "SaaS that scans a YouTube channel's video descriptions for dead, untagged, and redirected affiliate links and estimates the yearly commission they cost. Free scan of the newest videos, a paid full report priced by catalog size, and weekly monitoring. Dual payments (Razorpay for INR, Dodo for USD), Clerk auth, and headless link re-checking.",
       tags: ["React.js", "Vite", "TypeScript", "Express.js", "MongoDB", "YouTube API", "Razorpay"],
@@ -118,6 +119,7 @@ export const data = {
     {
       title: "The Bliss Hotel",
       image: "https://thebliss-hotel.vercel.app/opengraph-image.jpg",
+      imageAspect: "1200 / 630",
       description:
         "Luxury hotel website for a property in Pilani, Rajasthan. Deluxe rooms and premium suites with an availability checker and booking flow, a multi-cuisine restaurant and rooftop bar, a 500+ capacity conference hall, photo gallery, guest ratings, and a nearby-attractions guide.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
@@ -128,6 +130,7 @@ export const data = {
     {
       title: "Shree Anupam Hotel & Resort",
       image: "https://anupam-six.vercel.app/opengraph-image.png",
+      imageAspect: "1200 / 630",
       description:
         "Website for a hotel, banquet, and farmhouse property in Chirawa, Rajasthan. Three room categories with live availability, an event enquiry and quote system for weddings and corporate offsites, a private farmhouse with heated pool, in-house Rajasthani and multi-cuisine dining, photo gallery, and testimonials.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "React.js"],
@@ -179,6 +182,7 @@ export const data = {
       title: "Agentic CLI Dev Tool",
       image:
         "https://github.com/karan5772/codingAgent/blob/main/Screenshot%202025-12-08%20at%204.15.08%E2%80%AFPM.png?raw=true",
+      imageAspect: "2988 / 1536",
       description:
         "AI-powered CLI that acts as a developer agent, inspired by Cursor, using the start→plan→act→observe loop. Capable of autonomously generating full-stack apps from natural language.",
       tags: ["Node.js", "JavaScript", "OpenAI"],
