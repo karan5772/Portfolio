@@ -77,6 +77,12 @@ export default function Navbar() {
                 </span>
               </motion.button>
             ))}
+            <a
+              href="/ai-masterclass/"
+              style={{ padding: '0.38rem 0.9rem', fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.82rem', fontWeight: 600, color: '#C87533', letterSpacing: '0.02em', textDecoration: 'none' }}
+            >
+              Masterclass
+            </a>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -131,6 +137,12 @@ export default function Navbar() {
                 {n}
               </motion.button>
             ))}
+            <a
+              href="/ai-masterclass/"
+              style={{ marginTop: '0.75rem', fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: 'clamp(1.2rem, 5vw, 1.8rem)', color: '#C87533', textDecoration: 'none' }}
+            >
+              AI Masterclass →
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -4,6 +4,8 @@ import {
   siExpress, siMongodb, siPostgresql, siDocker,
   siGit, siPython, siLangchain,
   siGooglegemini, siHuggingface, siQdrant,
+  siClaude, siPerplexity, siNotebooklm, siGithubcopilot,
+  siGoogleclassroom, siGooglecolab,
 } from 'simple-icons'
 
 // LinkedIn removed from simple-icons for licensing — hardcoded path
@@ -61,3 +63,15 @@ export const TECH_LOGOS = [
   { icon: siPython,       name: 'Python',      group: 'tools'    },
   { icon: siGit,          name: 'Git',         group: 'tools'    },
 ]
+
+// AI tools covered on the masterclass page
+export const TOOL_ICONS = {
+  openai:     OPENAI,
+  gemini:     siGooglegemini,
+  notebooklm: siNotebooklm,
+  claude:     siClaude,
+  perplexity: siPerplexity,
+  copilot:    siGithubcopilot,
+  classroom:  siGoogleclassroom,
+  colab:      siGooglecolab,
+}
