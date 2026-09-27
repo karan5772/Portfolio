@@ -1,6 +1,9 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 import { data } from '../data/portfolio'
 
 const idFor = (n) => (n === 'Home' ? 'home' : n.toLowerCase())
@@ -53,9 +56,9 @@ export default function Navbar() {
                 {n}
               </button>
             ))}
-            <a href="/ai-masterclass/" className="nav-link" style={{ color: 'var(--amber)' }}>
+            <Link href="/ai-masterclass/" className="nav-link" style={{ color: 'var(--amber)' }}>
               AI Masterclass
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -95,9 +98,9 @@ export default function Navbar() {
                 {n}
               </button>
             ))}
-            <a href="/ai-masterclass/" style={{ marginTop: '0.75rem', fontWeight: 700, fontSize: 'clamp(1.2rem, 5vw, 1.7rem)', color: 'var(--amber)', textDecoration: 'none' }}>
+            <Link href="/ai-masterclass/" style={{ marginTop: '0.75rem', fontWeight: 700, fontSize: 'clamp(1.2rem, 5vw, 1.7rem)', color: 'var(--amber)', textDecoration: 'none' }}>
               AI Masterclass
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

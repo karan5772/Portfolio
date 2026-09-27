@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export default function Teaching() {
@@ -13,9 +14,9 @@ export default function Teaching() {
               Live AI webinars for college students and faculty, planned around each department's own syllabus.
             </p>
           </div>
-          <a href="/ai-masterclass/" className="btn btn-amber" style={{ whiteSpace: 'nowrap', justifySelf: 'start' }}>
+          <Link href="/ai-masterclass/" className="btn btn-amber" style={{ whiteSpace: 'nowrap', justifySelf: 'start' }}>
             See the AI Masterclass <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

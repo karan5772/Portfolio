@@ -1,4 +1,7 @@
+'use client'
+
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowLeft, ArrowRight, ArrowUpRight, Check, Plus, Minus, Menu, X } from 'lucide-react'
 import { BrandSvg, SOCIAL_ICONS, TOOL_ICONS } from '../lib/brandIcons'
@@ -41,17 +44,17 @@ function McNav() {
         }`}
       >
         <div className="wrap flex items-center justify-between">
-          <a href="/" style={{ fontWeight: 700, fontSize: '1.15rem', color: 'var(--ink)', textDecoration: 'none' }}>
+          <Link href="/" style={{ fontWeight: 700, fontSize: '1.15rem', color: 'var(--ink)', textDecoration: 'none' }}>
             Karan<span style={{ color: 'var(--sage)' }}>.</span>
-          </a>
+          </Link>
 
           <nav className="hidden md:flex items-center gap-1" aria-label="Page sections">
             {NAV.map(([label, id]) => (
               <a key={id} href={`#${id}`} className="nav-link">{label}</a>
             ))}
-            <a href="/" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+            <Link href="/" className="nav-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
               <ArrowLeft size={15} /> Portfolio
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -80,9 +83,9 @@ function McNav() {
                 {label}
               </a>
             ))}
-            <a href="/" style={{ marginTop: '1rem', color: 'var(--sage)', fontWeight: 600, fontSize: '1.0625rem', textDecoration: 'none' }}>
+            <Link href="/" style={{ marginTop: '1rem', color: 'var(--sage)', fontWeight: 600, fontSize: '1.0625rem', textDecoration: 'none' }}>
               Back to portfolio
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>
@@ -329,9 +332,9 @@ function Instructor() {
                 </a>
               )
             })}
-            <a href="/" className="btn btn-outline btn-sm" style={{ marginLeft: 4 }}>
+            <Link href="/" className="btn btn-outline btn-sm" style={{ marginLeft: 4 }}>
               Full portfolio <ArrowUpRight size={15} />
-            </a>
+            </Link>
           </div>
         </div>
 

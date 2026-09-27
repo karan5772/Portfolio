@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'
 import { BrandSvg } from '../lib/brandIcons'
 import { siGithub } from 'simple-icons'
