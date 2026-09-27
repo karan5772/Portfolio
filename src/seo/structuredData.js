@@ -47,7 +47,7 @@ export const masterclassSchema = {
       '@type': 'WebPage',
       '@id': `${PAGE_URL}#webpage`,
       url: PAGE_URL,
-      name: 'AI Masterclass for Teachers & Students',
+      name: 'AI Masterclass for College Students & Faculty',
       isPartOf: { '@id': `${SITE_URL}/#website` },
       about: { '@id': `${PAGE_URL}#service` },
       breadcrumb: { '@id': `${PAGE_URL}#breadcrumb` },
@@ -56,19 +56,23 @@ export const masterclassSchema = {
     {
       '@type': 'Service',
       '@id': `${PAGE_URL}#service`,
-      name: 'AI Masterclasses, Webinars & Workshops',
+      name: 'AI Webinars for College Students & Faculty',
       serviceType: 'AI training for education',
       description:
-        'Hands-on AI webinars, masterclasses and faculty development programmes for teachers, students, schools and colleges.',
+        'Live, online AI webinars for college students and college faculty.',
       provider: { '@id': PERSON_ID },
       areaServed: [{ '@type': 'Country', name: 'India' }, 'Online'],
-      audience: mc.audiences.map(a => ({ '@type': 'EducationalAudience', educationalRole: a.label.replace('For ', '') })),
+      audience: mc.programs.map(p => ({ '@type': 'EducationalAudience', educationalRole: p.label.replace('For ', '') })),
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
-        name: 'Session formats',
-        itemListElement: mc.formats.map(f => ({
+        name: 'Programs',
+        itemListElement: mc.programs.map(p => ({
           '@type': 'Offer',
-          itemOffered: { '@type': 'Service', name: f.name, description: `${f.duration} · ${f.mode}. ${f.detail}` },
+          itemOffered: {
+            '@type': 'Service',
+            name: p.name,
+            description: `${p.formats.map(f => `${f.name}: ${f.duration}, ${f.mode}`).join('; ')}. ${p.title}`,
+          },
         })),
       },
     },

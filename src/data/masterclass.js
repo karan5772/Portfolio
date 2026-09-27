@@ -6,119 +6,72 @@ export const SITE_URL = 'https://karanchoudhary.dev'
 export const PAGE_URL = `${SITE_URL}/ai-masterclass/`
 
 export const masterclass = {
-  eyebrow: 'AI Masterclass · Webinars & Workshops',
-
-  audiences: [
-    {
-      key: 'teachers',
-      label: 'For Teachers & Faculty',
-      title: 'Spend less time on paperwork, more time teaching.',
-      points: [
-        'Draft lesson plans, worksheets and rubrics in minutes',
-        'Generate quizzes and question banks with answer keys',
-        'Adapt one lesson for different levels in the same class',
-        'Give faster, more specific feedback on student work',
-        'Set a fair classroom policy on AI use and academic honesty',
-      ],
-    },
+  programs: [
     {
       key: 'students',
-      label: 'For Students',
-      title: 'Use AI as a study partner, not a shortcut.',
+      short: 'College students',
+      label: 'For College Students',
+      name: 'AI Webinar for College Students',
+      formats: [{ name: 'Webinar', duration: '60–90 min', mode: 'Online' }],
+      title: 'Use AI for coursework, projects and placements.',
       points: [
-        'Turn notes, PDFs and lectures into flashcards and practice tests',
-        'Research faster and check AI answers against real sources',
-        'Get unstuck on concepts with step-by-step explanations',
-        'Use AI for projects, coding and presentations the right way',
-        'Build a portfolio and prepare for interviews with AI',
+        'Turn lecture notes and PDFs into flashcards and practice tests before semester exams',
+        'Research papers faster and check every AI claim against the real source',
+        'Plan and debug minor and major projects with AI, and explain every line in your viva',
+        'Write lab reports, assignments and presentations within your college rules on AI',
+        'Prepare for placements and internships: resumes, mock interviews and aptitude practice',
       ],
     },
     {
-      key: 'institutions',
-      label: 'For Schools & Colleges',
-      title: 'One programme for your whole campus.',
+      key: 'faculty',
+      short: 'Faculty',
+      label: 'For College Faculty',
+      name: 'AI Webinar for Faculty',
+      formats: [{ name: 'Webinar', duration: '60–90 min', mode: 'Online' }],
+      title: 'Cut the hours spent on lecture prep, question papers and documentation.',
       points: [
-        'Faculty Development Programmes (FDPs) on AI in education',
-        'Student bootcamps run alongside clubs and tech fests',
-        'Separate tracks per department: engineering, science, commerce, arts',
-        'An agenda planned around your syllabus and academic calendar',
-        'Help writing an AI-use policy for your institution',
+        'Draft lecture plans, slides and tutorial sheets from your own syllabus',
+        "Build question papers and MCQ banks mapped to course outcomes and Bloom's levels",
+        'Write rubrics for projects, lab records and internal assessments',
+        'Speed up literature reviews and research writing, with citations you can verify',
+        'Set an AI-use policy for assignments that students can follow and you can enforce',
       ],
-    },
-  ],
-
-  formats: [
-    {
-      name: 'Webinar',
-      duration: '60–90 min',
-      mode: 'Online',
-      best: 'Large groups getting started',
-      detail: 'A live walkthrough of what AI can do in your field, with real demos and open Q&A at the end.',
-    },
-    {
-      name: 'Masterclass',
-      duration: '3 hours',
-      mode: 'Online or on-campus',
-      best: 'Hands-on learning',
-      detail: 'Laptops open. Participants build real prompts, study aids and teaching material for their own subject during the session.',
       featured: true,
-    },
-    {
-      name: 'Workshop series / FDP',
-      duration: '2–5 days',
-      mode: 'Online or on-campus',
-      best: 'Institutions',
-      detail: 'A structured multi-day programme with department tracks, take-home assignments and a final project.',
     },
   ],
 
   curriculum: [
     {
-      title: 'How AI actually works',
-      summary: 'What large language models are, why they sound confident when they are wrong, and where they are genuinely useful.',
-      topics: ['LLMs in plain language', 'Hallucinations & limits', 'Picking the right tool'],
+      title: 'AI foundations & prompting',
+      summary: 'What large language models are, why they sound confident when they are wrong, and a simple, repeatable way to write prompts that get useful results.',
+      topics: ['LLMs in plain language', 'Hallucinations & limits', 'Role · Context · Task · Format'],
     },
     {
-      title: 'Prompting that gets results',
-      summary: 'A simple, repeatable way to write prompts: give context, a role, examples and constraints, then refine.',
-      topics: ['Role · Context · Task · Format', 'Few-shot examples', 'Iterating on output'],
+      title: 'AI for teaching & learning',
+      summary: 'Faculty build lecture plans, question papers and rubrics from their own syllabus. Students turn lecture notes into practice tests and use AI as a tutor that asks questions back.',
+      topics: ['Lecture plans & question papers', 'CO-mapped MCQ banks', 'Notes → practice tests', 'AI as a Socratic tutor'],
     },
     {
-      title: 'AI for teaching',
-      summary: 'Lesson plans, assessments, rubrics and differentiated material built live, using your own syllabus.',
-      topics: ['Lesson & unit plans', 'Quizzes & question banks', 'Rubrics & feedback'],
-    },
-    {
-      title: 'AI for learning',
-      summary: 'Study methods that make students do more of the thinking: active recall, spaced practice and a tutor that asks questions back.',
-      topics: ['Notes → flashcards', 'AI as a Socratic tutor', 'Exam preparation'],
-    },
-    {
-      title: 'Research & writing with integrity',
-      summary: 'Find sources, summarise papers and check claims without handing your thinking over to a chatbot.',
-      topics: ['Source-grounded answers', 'Fact-checking AI output', 'Citing AI use honestly'],
+      title: 'Research, integrity & responsible AI',
+      summary: 'Literature reviews, paper summaries and fact-checking without handing your thinking over to a chatbot. Covers plagiarism, citing AI use, privacy, and a practical AI policy for your department.',
+      topics: ['Literature reviews', 'Plagiarism & citing AI', 'Student data & privacy', 'Department AI-use policy'],
     },
     {
       title: 'Build your own AI assistant',
-      summary: 'No code needed. Set up a custom assistant grounded in your own notes, syllabus or department documents.',
-      topics: ['Custom GPTs & Gemini Gems', 'NotebookLM notebooks', 'Sharing with a class'],
-    },
-    {
-      title: 'Responsible & safe AI',
-      summary: 'Privacy, bias, and what should never be pasted into a chatbot, plus a practical classroom AI policy.',
-      topics: ['Student data & privacy', 'Bias & fairness', 'Writing an AI-use policy'],
+      summary: 'No code needed. Set up an assistant grounded in your course material, lab manuals or department documents, and share it with a batch.',
+      topics: ['Custom GPTs & Gemini Gems', 'NotebookLM for a course', 'Sharing with a batch'],
     },
   ],
 
   fields: [
-    'Computer Science & Engineering',
-    'Science & Mathematics',
-    'Commerce & Management',
-    'Humanities & Languages',
-    'Medical & Life Sciences',
-    'School Teachers (K–12)',
-    'Competitive-exam Aspirants',
-    'Research Scholars',
+    'Engineering (B.Tech, M.Tech)',
+    'Computer Applications (BCA, MCA)',
+    'Sciences (B.Sc, M.Sc)',
+    'Commerce & Management (B.Com, BBA, MBA)',
+    'Arts & Humanities',
+    'Pharmacy & Life Sciences',
+    'Law',
+    'PhD scholars',
   ],
 
   tools: [
@@ -126,23 +79,19 @@ export const masterclass = {
     { name: 'Gemini', icon: 'gemini' },
     { name: 'NotebookLM', icon: 'notebooklm' },
     { name: 'Claude', icon: 'claude' },
-    { name: 'Perplexity', icon: 'perplexity' },
-    { name: 'GitHub Copilot', icon: 'copilot' },
-    { name: 'Google Classroom', icon: 'classroom' },
-    { name: 'Google Colab', icon: 'colab' },
   ],
 
   takeaways: [
     { title: 'A prompt playbook', text: 'Ready-to-use prompts for your subject and role, yours to keep after the session.' },
-    { title: 'Work you made in the session', text: 'The lesson plans, study sets or assistants you built during the session, ready to use the next day.' },
+    { title: 'Work you made in the session', text: 'The lecture plans, question banks, study sets or assistants you built during the session, ready to use the next day.' },
     { title: 'Guidance on what to avoid', text: 'Where AI fails, what not to share with it, and how to stay within academic-integrity rules.' },
-    { title: 'Follow-up Q&A', text: 'A way to ask questions after the session, once you have tried things in your own classroom.' },
+    { title: 'Follow-up Q&A', text: 'A way to ask questions after the session, once you have tried things with your own classes.' },
   ],
 
   steps: [
-    { title: 'Tell me about your group', text: 'Who is attending, their subjects, how comfortable they are with tech, and what you want them to leave with.' },
+    { title: 'Tell me about your group', text: 'Which department and year, how many people, how comfortable they are with tech, and what you want them to leave with.' },
     { title: 'I plan the agenda', text: 'You get a session outline planned around your field, with examples from your own syllabus.' },
-    { title: 'We run it live', text: 'Online or on-campus. Mostly hands-on, with demos, exercises and plenty of time for questions.' },
+    { title: 'We run it live', text: 'Online, on Google Meet, Zoom or your college’s own platform. Mostly hands-on, with demos, exercises and plenty of time for questions.' },
     { title: 'You keep the resources', text: 'Prompt playbooks, templates and follow-up support so what participants learned gets used.' },
   ],
 
@@ -157,27 +106,27 @@ export const masterclass = {
   faqs: [
     {
       q: 'Do participants need a technical background?',
-      a: 'No. The sessions for teachers and non-CS students assume no coding knowledge at all. If you can use email and a browser, you can follow along. Engineering and CS groups get a more technical track.',
+      a: 'No. The sessions for faculty and non-CS students assume no coding knowledge at all. If you can use email and a browser, you can follow along. Engineering and CS groups get a more technical track.',
     },
     {
-      q: 'Are the sessions online or in person?',
-      a: 'Both. Webinars run online on Google Meet, Zoom or your own platform. Masterclasses and FDPs can be online or on-campus. I am based in Rajasthan, and travel elsewhere can be arranged.',
+      q: 'Where are the sessions held?',
+      a: 'All sessions are live and online, on Google Meet, Zoom or your college’s own platform. Participants can join from a lab, a seminar hall or their own laptops.',
     },
     {
       q: 'Which AI tools do you cover? Are they free?',
-      a: 'Mainly ChatGPT, Google Gemini, NotebookLM, Claude and Perplexity, with others added depending on the field. Everything taught works on the free tiers, and I point out when a paid plan is actually worth it.',
+      a: 'Mainly ChatGPT, Google Gemini, NotebookLM and Claude, with others added depending on the field. Everything taught works on the free tiers, and I point out when a paid plan is actually worth it.',
     },
     {
       q: "Won't this just help students cheat?",
-      a: 'Academic integrity is part of every session. Students learn to use AI to understand material, not to outsource it, and teachers learn to design assignments and policies that hold up when AI is available.',
+      a: 'Academic integrity is part of every session. Students learn to use AI to understand material, not to outsource it, and faculty learn to design assignments, vivas and policies that hold up when AI is available.',
     },
     {
       q: 'Can the session be customised for our department or syllabus?',
-      a: 'Yes, and it is recommended. Before the session I ask for your subjects and a few topics from the syllabus so every demo uses material your participants actually teach or study.',
+      a: 'Yes, and it is recommended. Before the session I ask for your subjects and a few topics from the syllabus so every demo uses material your faculty actually teach or your students actually study.',
     },
     {
       q: 'How much does it cost?',
-      a: 'It depends on the format, duration, group size and whether it is on-campus. Send your details through the form below and I will reply with a quote and a draft agenda, usually within 24 hours.',
+      a: 'It depends on the program, session length and group size. Send your details through the form below and I will reply with a quote and a draft agenda, usually within 24 hours.',
     },
   ],
 }

@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { BrandSvg, SOCIAL_ICONS } from '../lib/brandIcons'
 import { data } from '../data/portfolio'
 
@@ -10,134 +9,62 @@ const socialLinks = [
 ]
 
 // Pre-filled so a prospect never faces a blank email
-const MAILTO = `mailto:${data.email}?subject=${encodeURIComponent('Project enquiry — via karanchoudhary.dev')}&body=${encodeURIComponent('Hi Karan,\n\nWhat I need built: \nTimeline: \nBudget range (optional): \n')}`
-const WHATSAPP = `https://wa.me/${data.phone.replace('+', '')}?text=${encodeURIComponent('Hi Karan, found you via karanchoudhary.dev — I have a project to discuss.')}`
+const MAILTO = `mailto:${data.email}?subject=${encodeURIComponent('Project enquiry via karanchoudhary.dev')}&body=${encodeURIComponent('Hi Karan,\n\nWhat I need built: \nTimeline: \nBudget range (optional): \n')}`
+const WHATSAPP = `https://wa.me/${data.phone.replace('+', '')}?text=${encodeURIComponent('Hi Karan, found you via karanchoudhary.dev. I have a project to discuss.')}`
 
 export default function Contact() {
   return (
-    <section id="contact" className="sec px" style={{ background: '#0C0C0C' }}>
+    <section id="contact" className="sec px" style={{ background: 'var(--night)' }}>
       <div className="wrap">
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '5rem', alignItems: 'start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 380px), 1fr))', gap: '4rem', alignItems: 'start' }}>
 
-          {/* Left: heading + CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2
-              className="serif"
-              style={{ fontSize: 'clamp(2.5rem, 8vw, 6.5rem)', color: '#F0EBE3', lineHeight: 0.96, letterSpacing: '-0.02em', marginBottom: '1.75rem' }}
-            >
+          <div>
+            <h2 className="serif" style={{ fontSize: 'clamp(2.5rem, 6.5vw, 4.75rem)', color: '#F0EBE3', lineHeight: 1.02, marginBottom: '1.5rem' }}>
               Let's work<br />
               <span style={{ color: '#D4964A' }}>together.</span>
             </h2>
 
-            <p style={{ fontSize: '1rem', lineHeight: 1.8, color: '#7A7A7A', maxWidth: '38ch', marginBottom: '2.5rem' }}>
-              Available for freelance projects, contract work, and full-time roles. Tell me what you're building and when you need it — I reply within 24 hours.
+            <p style={{ fontSize: '1.0625rem', lineHeight: 1.75, color: 'var(--night-text)', maxWidth: '40ch', marginBottom: '2rem' }}>
+              I'm available for freelance projects, contract work and full-time roles. Tell me what you're
+              building and when you need it. I reply within 24 hours.
             </p>
 
-            <a
-              href={MAILTO}
-              style={{
-                display: 'inline-block',
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: 'clamp(0.9rem, 2vw, 1.15rem)',
-                fontWeight: 600,
-                color: '#A8C8B8',
-                textDecoration: 'none',
-                borderBottom: '1px solid rgba(168,200,184,0.3)',
-                paddingBottom: '0.5rem',
-                transition: 'color 0.18s, border-color 0.18s',
-              }}
-              onMouseEnter={e => { e.currentTarget.style.color = '#F0EBE3'; e.currentTarget.style.borderBottomColor = 'rgba(240,235,227,0.4)'; }}
-              onMouseLeave={e => { e.currentTarget.style.color = '#A8C8B8'; e.currentTarget.style.borderBottomColor = 'rgba(168,200,184,0.3)'; }}
-            >
-              {data.email}
-            </a>
-          </motion.div>
+            <a href={MAILTO} className="btn btn-amber">Email me</a>
+          </div>
 
-          {/* Right: contact links */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.12 }}
-            style={{ paddingTop: '0.5rem' }}
-          >
-            {/* Phone */}
-            <a
-              href={`tel:${data.phone}`}
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)',
-                textDecoration: 'none', color: '#6A6A6A', transition: 'color 0.18s',
-              }}
-              onMouseEnter={e => e.currentTarget.style.color = '#F0EBE3'}
-              onMouseLeave={e => e.currentTarget.style.color = '#6A6A6A'}
-            >
-              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'inherit' }}>Phone</span>
-              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.9rem', fontWeight: 500, color: 'inherit' }}>{data.phone}</span>
+          <div>
+            <a href={MAILTO} className="contact-row">
+              <span className="contact-row-label">Email</span>
+              <span>{data.email}</span>
             </a>
-
-            {/* WhatsApp */}
-            <a
-              href={WHATSAPP}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)',
-                textDecoration: 'none', color: '#6A6A6A', transition: 'color 0.18s',
-              }}
-              onMouseEnter={e => e.currentTarget.style.color = '#25D366'}
-              onMouseLeave={e => e.currentTarget.style.color = '#6A6A6A'}
-            >
-              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'inherit' }}>WhatsApp</span>
-              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.9rem', fontWeight: 500, color: 'inherit' }}>Chat instantly</span>
+            <a href={`tel:${data.phone}`} className="contact-row">
+              <span className="contact-row-label">Phone</span>
+              <span>{data.phone}</span>
             </a>
-
-            {/* Location */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
-              <span style={{ fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6A6A6A' }}>Location</span>
-              <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.9rem', fontWeight: 500, color: '#6A6A6A' }}>Rajasthan, India</span>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="contact-row">
+              <span className="contact-row-label">WhatsApp</span>
+              <span>Chat on WhatsApp</span>
+            </a>
+            <div className="contact-row">
+              <span className="contact-row-label">Location</span>
+              <span>Rajasthan, India</span>
             </div>
 
-            {/* Social links */}
             {socialLinks.map(({ key, handle }) => {
               const entry = SOCIAL_ICONS[key]
-              if (!entry) return null
               const socialItem = data.social.find(s => s.icon === key)
+              if (!entry || !socialItem) return null
               return (
-                <a
-                  key={key}
-                  href={socialItem?.url || '#'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                    padding: '1.1rem 0', borderBottom: '1px solid rgba(255,255,255,0.07)',
-                    textDecoration: 'none', color: '#6A6A6A', transition: 'color 0.18s',
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.color = `#${entry.icon.hex}`}
-                  onMouseLeave={e => e.currentTarget.style.color = '#6A6A6A'}
-                >
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 9, fontFamily: "'DM Mono', monospace", fontSize: '0.72rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'inherit' }}>
-                    <BrandSvg icon={entry.icon} size={14} />
+                <a key={key} href={socialItem.url} target="_blank" rel="noopener noreferrer me" className="contact-row">
+                  <span className="contact-row-label">
+                    <BrandSvg icon={entry.icon} size={16} />
                     {entry.label}
                   </span>
-                  <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: '0.82rem', color: 'inherit' }}>{handle}</span>
+                  <span>{handle}</span>
                 </a>
               )
             })}
-
-            <div style={{ paddingTop: '2rem' }}>
-              <a href={MAILTO} className="btn-amber">
-                Send a message
-              </a>
-            </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>

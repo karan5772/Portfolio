@@ -4,8 +4,7 @@ import {
   siExpress, siMongodb, siPostgresql, siDocker,
   siGit, siPython, siLangchain,
   siGooglegemini, siHuggingface, siQdrant,
-  siClaude, siPerplexity, siNotebooklm, siGithubcopilot,
-  siGoogleclassroom, siGooglecolab,
+  siClaude, siNotebooklm,
 } from 'simple-icons'
 
 // LinkedIn removed from simple-icons for licensing — hardcoded path
@@ -70,8 +69,4 @@ export const TOOL_ICONS = {
   gemini:     siGooglegemini,
   notebooklm: siNotebooklm,
   claude:     siClaude,
-  perplexity: siPerplexity,
-  copilot:    siGithubcopilot,
-  classroom:  siGoogleclassroom,
-  colab:      siGooglecolab,
 }

@@ -3,7 +3,7 @@ export const data = {
   title: "MERN Stack & Gen AI Developer",
   location: "India",
   summary:
-    "Freelance MERN Stack & Gen AI developer. I build full-stack web apps, AI-powered tools, and REST APIs — from idea to deployment. B.Tech Computer Engineering graduate, BKBIET Pilani, 2026.",
+    "Freelance MERN Stack & Gen AI developer. I build full-stack web apps, AI-powered tools, and REST APIs, from idea to deployment. B.Tech Computer Engineering graduate, BKBIET Pilani, 2026.",
   profileImage: "/karan-kumar.jpg",
   email: "karankumar8239@gmail.com",
   phone: "+916350320901",
@@ -70,7 +70,7 @@ export const data = {
       title: "Astro AI",
       image: "https://astro.karanchoudhary.dev/og.png",
       description:
-        "Vedic astrology platform powered by AI. Generates a full sidereal birth chart from your birth date, time, and location, then lets you ask anything — via text or real-time voice — with answers grounded in your actual planetary positions.",
+        "Vedic astrology platform powered by AI. Generates a full sidereal birth chart from your birth date, time, and location, then lets you ask anything by text or real-time voice, with answers grounded in your actual planetary positions.",
       tags: ["Next.js", "OpenAI", "Voice AI", "Vedic Charts", "Real-time"],
       categories: ["ai", "fullstack"],
       liveUrl: "https://astro.karanchoudhary.dev",
@@ -80,7 +80,7 @@ export const data = {
       title: "Invoice Generator for Indian Freelancers",
       image: "https://invoice.karanchoudhary.dev/portfolio-image",
       description:
-        "Free, GST-aware invoice generator for Indian freelancers. Handles CGST/SGST vs IGST automatically, PAN-only invoices without a GSTIN, exports under LUT, TDS notes, and real vector PDF downloads. No sign-up — data never leaves the browser.",
+        "Free, GST-aware invoice generator for Indian freelancers. Handles CGST/SGST vs IGST automatically, PAN-only invoices without a GSTIN, exports under LUT, TDS notes, and real vector PDF downloads. No sign-up, and data never leaves the browser.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "react-pdf", "GST"],
       categories: ["fullstack"],
       liveUrl: "https://invoice.karanchoudhary.dev",
@@ -100,7 +100,7 @@ export const data = {
       title: "BKBIHE College Website",
       image: "https://bkbihe.vercel.app/og.png",
       description:
-        "Complete institutional website covering 15+ pages — admissions, academics, faculty directory, infrastructure, research journal, and an AI-powered admission enquiry using Google Gemini.",
+        "Complete institutional website covering 15+ pages: admissions, academics, faculty directory, infrastructure, research journal, and an AI-powered admission enquiry using Google Gemini.",
       tags: ["React.js", "TypeScript", "Google Gemini", "Tailwind CSS"],
       categories: ["freelance"],
       liveUrl: "https://bkbihe.vercel.app",
@@ -193,7 +193,7 @@ export const data = {
       title: "College Grievance Portal",
       image: "/projects/college-portal.jpg",
       description:
-        "Full-stack platform bridging the communication gap between students and faculty. Students raise grievances, faculty address them — with transparent status tracking and admin oversight throughout.",
+        "Full-stack platform bridging the communication gap between students and faculty. Students raise grievances, faculty address them, with transparent status tracking and admin oversight throughout.",
       tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
       categories: ["freelance", "fullstack"],
       repoUrl: "https://github.com/karan5772/college-resolutation-portel",
@@ -211,7 +211,7 @@ export const data = {
       title: "Chai With AI Buddies",
       image: null,
       description:
-        "Chat UI where you pick an AI persona — Hitesh Choudhary or Piyush Garg — and have a conversation in their voice. Frontend in vanilla HTML/CSS/JS; backend in Node.js using Google Gemini.",
+        "Chat UI where you pick an AI persona (Hitesh Choudhary or Piyush Garg) and have a conversation in their voice. Frontend in vanilla HTML/CSS/JS; backend in Node.js using Google Gemini.",
       tags: ["Node.js", "Express.js", "Google Gemini", "JavaScript"],
       categories: ["ai"],
       repoUrl: "https://github.com/karan5772/Ai-Persona-Assistant",
@@ -221,7 +221,7 @@ export const data = {
   experience: [
     {
       company: "Google",
-      position: "Student Ambassador — Google Gemini",
+      position: "Student Ambassador, Google Gemini",
       period: "2025",
       description:
         "Organised workshops and events to promote awareness and adoption of Google Gemini and AI. Acted as a liaison between Google and students, fostering a developer community and sharing feedback.",
@@ -248,14 +248,14 @@ export const data = {
   education: [
     {
       institution: "B K Birla Institute of Engineering & Technology, Pilani",
-      degree: "B.Tech — Computer Engineering",
+      degree: "B.Tech, Computer Engineering",
       period: "2022 – 2026",
       gpa: null,
-      description: "Graduated 2026. Focused on full-stack development, machine learning, and AI applications. Served as Google Student Ambassador for Gemini — organised developer workshops and promoted AI adoption across campus.",
+      description: "Graduated 2026. Focused on full-stack development, machine learning, and AI applications. Served as Google Student Ambassador for Gemini, organising developer workshops and promoting AI adoption across campus.",
     },
     {
       institution: "Birla School, Pilani",
-      degree: "Senior Secondary — CBSE",
+      degree: "Senior Secondary (CBSE)",
       period: "2022",
       gpa: null,
       description: "Science stream with Mathematics, Physics, and Computer Science.",
