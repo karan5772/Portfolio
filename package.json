@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check:academic": "npx -y -p typescript@5 tsc -p tsconfig.academic.json",
+    "shot": "node --env-file-if-exists=.env.local scripts/shot.mjs"
   },
   "dependencies": {
     "@fontsource/dm-mono": "^5.2.7",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "playwright-core": "^1.63.0",
     "postcss": "^8.4.40",
     "tailwindcss": "^3.4.7"
   }

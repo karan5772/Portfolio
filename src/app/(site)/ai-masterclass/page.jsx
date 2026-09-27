@@ -1,6 +1,6 @@
-import MasterclassPage from '../../masterclass/MasterclassPage'
-import JsonLd from '../../seo/JsonLd'
-import { masterclassSchema } from '../../seo/structuredData'
+import MasterclassPage from '@/src/masterclass/MasterclassPage'
+import JsonLd from '@/src/seo/JsonLd'
+import { masterclassSchema } from '@/src/seo/structuredData'
 
 const TITLE = 'AI Masterclass for College Students & Faculty | Karan Kumar'
 const DESCRIPTION =

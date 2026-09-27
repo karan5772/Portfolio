@@ -1,0 +1,24 @@
+/* Shown on public demos only, never on private previews (screenshots stay clean) */
+.bar {
+  position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 50;
+  display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; justify-content: center;
+  width: max-content; max-width: calc(100% - 24px);
+  padding: 0.55rem 0.6rem 0.55rem 1rem; border-radius: 10px;
+  background: #16181B; color: #E9EAEC;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; font-size: 0.9375rem; line-height: 1.35;
+}
+.link {
+  display: inline-block; padding: 0.4rem 0.8rem; border-radius: 7px;
+  background: #FFFFFF; color: #16181B; font-weight: 600; text-decoration: none; white-space: nowrap;
+}
+.link:hover { background: #E9EAEC; }
+.link:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 2px; }
+.short { display: none; }
+@media (max-width: 520px) {
+  .bar { flex-wrap: nowrap; gap: 0.6rem; font-size: 0.875rem; bottom: 12px; padding: 0.45rem 0.45rem 0.45rem 0.8rem; }
+  .long { display: none; }
+  .short { display: inline; white-space: nowrap; }
+  .link { padding: 0.35rem 0.7rem; }
+}
+/* Leaves room at the end of the page so the bar never covers the footer */
+.spacer { height: 88px; }

@@ -1,0 +1,11 @@
+/* Minimal reset for academic template pages, which don't load the portfolio stylesheet.
+   Mirrors the parts of Tailwind's preflight the templates rely on. */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border: 0 solid; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: #FFFFFF; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+ol, ul { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; }
+strong { font-weight: 700; }

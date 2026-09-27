@@ -1,14 +1,15 @@
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import About from '../components/About'
-import Work from '../components/Work'
-import Experience from '../components/Experience'
-import Teaching from '../components/Teaching'
-import Education from '../components/Education'
-import Achievements from '../components/Achievements'
-import Contact from '../components/Contact'
-import JsonLd from '../seo/JsonLd'
-import { portfolioSchema } from '../seo/structuredData'
+import Navbar from '@/src/components/Navbar'
+import Hero from '@/src/components/Hero'
+import About from '@/src/components/About'
+import Work from '@/src/components/Work'
+import Experience from '@/src/components/Experience'
+import Teaching from '@/src/components/Teaching'
+import Education from '@/src/components/Education'
+import Achievements from '@/src/components/Achievements'
+import Contact from '@/src/components/Contact'
+import Footer from '@/src/components/Footer'
+import JsonLd from '@/src/seo/JsonLd'
+import { portfolioSchema } from '@/src/seo/structuredData'
 
 const TITLE = 'Karan Kumar | Software Engineer'
 const DESCRIPTION =
@@ -48,6 +49,7 @@ export default function Home() {
       <Education />
       <Achievements />
       <Contact />
+      <Footer />
     </>
   )
 }

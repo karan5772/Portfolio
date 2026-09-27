@@ -317,3 +317,66 @@ a.contact-row:hover { color: #F0EBE3; }
 }
 .mc-form input::placeholder, .mc-form textarea::placeholder { color: #8A8A8A; }
 .mc-form input:focus, .mc-form select:focus, .mc-form textarea:focus { border-color: #6FB08C; }
+/* A visible ring, not just a border tint, for keyboard users on the dark background */
+.mc-form input:focus-visible, .mc-form select:focus-visible, .mc-form textarea:focus-visible { outline: 2px solid #8FC0A4; outline-offset: 2px; }
+
+/* ═══ Academic websites showcase (/academic) ════ */
+.ac-hero { padding-top: clamp(7rem, 12vw, 9rem); padding-bottom: clamp(3.5rem, 7vw, 5rem); }
+.ac-hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 3rem; align-items: center; }
+.ac-stack { position: relative; aspect-ratio: 5 / 4; }
+.ac-stack-item { position: absolute; width: 78%; border-radius: 10px; overflow: hidden; border: 1px solid #D9D4CD; background: #FFFFFF; }
+.ac-stack-item img { display: block; width: 100%; height: auto; }
+.ac-stack-0 { top: 0; right: 0; }
+.ac-stack-1 { top: 22%; right: 11%; }
+.ac-stack-2 { top: 44%; right: 22%; }
+@media (max-width: 900px) { .ac-hero-grid { grid-template-columns: minmax(0, 1fr); } .ac-stack { display: none; } }
+.ac-hero h1 { font-size: clamp(2.05rem, 5vw, 3.75rem); line-height: 1.08; color: var(--ink); max-width: 20ch; margin-bottom: 1.25rem; }
+
+.ac-shot { display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: #F3F1EE; }
+.ac-shot img { display: block; width: 100%; height: auto; }
+.ac-shot:hover { border-color: #C9C2B8; }
+.ac-price-inline { font-family: 'DM Mono', monospace; font-size: 0.9375rem; color: var(--muted); }
+
+.ac-included { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 2.25rem 3.5rem; }
+.ac-included > div { padding-top: 1.1rem; border-top: 2px solid var(--ink); }
+
+/* Pricing: a price list, not a row of cards */
+.ac-prices { list-style: none; border-top: 2px solid var(--ink); }
+.ac-prices li {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.35rem 2rem; align-items: baseline;
+  padding: 1.35rem 0; border-bottom: 1px solid var(--line);
+}
+.ac-prices .ac-amount { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; font-size: clamp(1.5rem, 3vw, 1.9rem); color: var(--ink); text-align: right; white-space: nowrap; }
+.ac-prices .ac-period { display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 0.875rem; color: var(--muted); }
+.ac-plan { background: var(--sage-tint); border-bottom: none !important; padding-left: 1.25rem !important; padding-right: 1.25rem !important; border-radius: 0 0 10px 10px; }
+@media (max-width: 560px) {
+  .ac-prices li { grid-template-columns: minmax(0, 1fr); }
+  .ac-prices .ac-amount { text-align: left; }
+}
+
+/* FAQ built on <details>, so answers are in the HTML and work without JavaScript */
+.ac-faq { border-bottom: 1px solid var(--line); }
+.ac-faq summary {
+  list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 1.35rem 0; font-size: 1.0625rem; font-weight: 600; color: var(--ink);
+}
+.ac-faq summary::-webkit-details-marker { display: none; }
+.ac-faq summary::after { content: '+'; font-size: 1.5rem; font-weight: 400; line-height: 1; color: var(--muted); flex-shrink: 0; }
+.ac-faq[open] summary::after { content: '−'; }
+.ac-faq summary:hover { color: var(--sage); }
+.ac-faq p { padding-bottom: 1.35rem; }
+
+/* "Why not build it yourself": heading beside a ruled list, so it reads differently from "What's included" */
+.ac-why { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 2rem clamp(2.5rem, 6vw, 5rem); align-items: start; }
+@media (min-width: 901px) { .ac-why-head { position: sticky; top: 2rem; } }
+@media (max-width: 900px) { .ac-why { grid-template-columns: minmax(0, 1fr); } }
+.ac-why-list { list-style: none; }
+.ac-why-list li { padding: 1.25rem 0; border-top: 1px solid var(--line); }
+.ac-why-list li:last-child { border-bottom: 1px solid var(--line); }
+
+/* "Have a different budget?" under the price list */
+.ac-budget {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.25rem 2rem; flex-wrap: wrap;
+  margin-top: 2rem; padding: 1.5rem; border-radius: 12px; background: #FFFFFF; border: 1px solid var(--line);
+}
+.ac-budget > div { flex: 1 1 22rem; }

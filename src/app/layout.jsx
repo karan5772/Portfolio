@@ -1,5 +1,4 @@
-import '../index.css'
-import { SITE_URL } from '../data/masterclass'
+import { SITE_URL } from '@/src/data/masterclass'
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

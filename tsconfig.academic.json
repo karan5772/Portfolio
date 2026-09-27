@@ -1,0 +1,16 @@
+{
+  "//": "Type-checks academic data files against the JSDoc types in types/academic.js. Run: npm run check:academic",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "target": "es2022",
+    "baseUrl": ".",
+    "paths": { "@/*": ["./*"] },
+    "types": []
+  },
+  "include": ["types/**/*.js", "content/academic/**/*.js"]
+}
