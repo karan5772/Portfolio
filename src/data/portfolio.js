@@ -3,7 +3,7 @@ export const data = {
   title: "MERN Stack & Gen AI Developer",
   location: "India",
   summary:
-    "Freelance MERN Stack & Gen AI developer. I build full-stack web apps, AI-powered tools, and REST APIs, from idea to deployment. B.Tech Computer Engineering graduate, BKBIET Pilani, 2026.",
+    "Freelance MERN Stack & Gen AI developer. I build full-stack web apps, AI-powered tools, and REST APIs, from idea to deployment. Shipped products with live payments, auth and AI, plus production systems for colleges and businesses, including a ticketing platform that handled 900+ users. B.Tech CSE graduate (9.1 CGPA), BKBIET Pilani, 2026.",
   profileImage: "/karan-kumar.jpg",
   email: "karankumar8239@gmail.com",
   phone: "+916350320901",
@@ -19,9 +19,21 @@ export const data = {
 
   social: [
     { platform: "GitHub", url: "https://github.com/karan5772", icon: "github" },
-    { platform: "LinkedIn", url: "https://www.linkedin.com/in/karan5772", icon: "linkedin" },
-    { platform: "X / Twitter", url: "https://x.com/karankumar5772", icon: "twitter" },
-    { platform: "Hashnode", url: "https://hashnode.com/@karan5772", icon: "hashnode" },
+    {
+      platform: "LinkedIn",
+      url: "https://www.linkedin.com/in/karan5772",
+      icon: "linkedin",
+    },
+    {
+      platform: "X / Twitter",
+      url: "https://x.com/karankumar5772",
+      icon: "twitter",
+    },
+    {
+      platform: "Hashnode",
+      url: "https://hashnode.com/@karan5772",
+      icon: "hashnode",
+    },
   ],
 
   skills: [
@@ -50,7 +62,15 @@ export const data = {
       imageAspect: "1200 / 630",
       description:
         "A shelf for people who read tech books: rate a title out of five stars, tag it across 172 categories from compilers to engineering management, and keep a Want-to-read pile. Ships a 257-book catalogue resolved against Open Library, a \u2318K search palette over books, categories and readers, one-click shelving, a recommendation ranking sourced from a public meta-analysis of 36 engineering reading lists, public profile pages, per-URL SEO across every category and title, and an animated year-end recap exported to MP4 in the browser.",
-      tags: ["Astro", "Svelte 5", "Cloudflare Workers", "D1", "Clerk", "Dodo Payments", "Tailwind 4"],
+      tags: [
+        "Astro",
+        "Svelte 5",
+        "Cloudflare Workers",
+        "D1",
+        "Clerk",
+        "Dodo Payments",
+        "Tailwind 4",
+      ],
       categories: ["fullstack"],
       liveUrl: "https://peppered.karankumar8239.workers.dev",
       repoUrl: null,
@@ -61,7 +81,15 @@ export const data = {
       imageAspect: "1200 / 630",
       description:
         "SaaS that scans a YouTube channel's video descriptions for dead, untagged, and redirected affiliate links and estimates the yearly commission they cost. Free scan of the newest videos, a paid full report priced by catalog size, and weekly monitoring. Dual payments (Razorpay for INR, Dodo for USD), Clerk auth, and headless link re-checking.",
-      tags: ["React.js", "Vite", "TypeScript", "Express.js", "MongoDB", "YouTube API", "Razorpay"],
+      tags: [
+        "React.js",
+        "Vite",
+        "TypeScript",
+        "Express.js",
+        "MongoDB",
+        "YouTube API",
+        "Razorpay",
+      ],
       categories: ["fullstack"],
       liveUrl: "https://linkrevive.karanchoudhary.dev",
       repoUrl: null,
@@ -87,10 +115,48 @@ export const data = {
       repoUrl: "https://github.com/karan5772/InvoiceGenerator",
     },
     {
+      title: "Bouquetgram",
+      image: "/projects/bouquetgram-og.jpg",
+      description:
+        "Send a digital bouquet as a link: pick flowers, write a card, add a song and a 30-second voice note. Free to send with no accounts; songs and voice notes are small paid extras. Cards live in D1, voice notes in R2, and extras are paid through Razorpay.",
+      tags: [
+        "Astro",
+        "Svelte 5",
+        "Cloudflare Workers",
+        "D1",
+        "R2",
+        "Razorpay",
+        "Tailwind 4",
+      ],
+      categories: ["fullstack"],
+      liveUrl: "https://bouquetgram.com",
+      repoUrl: null,
+    },
+    {
+      title: "Icon Saloon Slot Booking",
+      image: "/projects/iconsalon-og.png",
+      description:
+        "Online slot reservations for a salon in Pilani. Customers pick services and a time, pay a reservation fee through Razorpay, and get a QR receipt. Slots are held for 5 minutes per attempt, payments are verified server-side, and the owner manages barbers, prices, services and days off from an admin panel. Rate-limited and D1-backed.",
+      tags: ["Astro", "Cloudflare Workers", "D1", "Razorpay", "QR Codes"],
+      categories: ["fullstack", "freelance"],
+      liveUrl: "https://iconsalon.karankumar8239.workers.dev",
+      repoUrl: null,
+    },
+    {
+      title: "GATE CSE Visual Notes",
+      image: "/projects/gate-cse-notes-og.png",
+      description:
+        "Visual, animated study notes for GATE Computer Science. Computer Organization & Architecture and Compiler Design are done, with 114 animated subtopics that walk through concepts step by step.",
+      tags: ["React.js", "Vite", "Tailwind CSS", "Animation"],
+      categories: ["fullstack"],
+      liveUrl: "https://gate-cse-notes.karankumar8239.workers.dev",
+      repoUrl: null,
+    },
+    {
       title: "Basant Event Ticketing",
       image: "https://bkbietbasant.in/BASANT.png",
       description:
-        "Production ticketing system for BKBIET's annual cultural festival. Three-part system: a user-facing ticket booking portal, an admin dashboard for inventory and sales management, and a scanner app for real-time entry verification at the gate.",
+        "Production ticketing system for BKBIET's annual cultural festival. Three-part system: a ticket booking portal, an admin dashboard for inventory and sales, and a scanner app for real-time entry verification at the gate. Served 900+ users, processed over \u20b910 lakh in transactions, and scaled to 450+ requests per minute.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
       categories: ["freelance"],
       liveUrl: "https://bkbietbasant.in",
@@ -144,7 +210,15 @@ export const data = {
         "https://raw.githubusercontent.com/karan5772/MyTute/refs/heads/main/frontend/public/Screenshot1.png",
       description:
         "RAG-based AI tutor that answers questions from user PDFs and YouTube transcripts using OpenAI and Qdrant. Features per-user ephemeral collections with session-based isolation and auto-clear on exit.",
-      tags: ["React.js", "Node.js", "Express.js", "OpenAI", "LangChain", "Qdrant DB", "Clerk Auth"],
+      tags: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "OpenAI",
+        "LangChain",
+        "Qdrant DB",
+        "Clerk Auth",
+      ],
       categories: ["ai", "fullstack"],
       repoUrl: "https://github.com/karan5772/mytute",
     },
@@ -250,27 +324,56 @@ export const data = {
       institution: "B K Birla Institute of Engineering & Technology, Pilani",
       degree: "B.Tech, Computer Engineering",
       period: "2022 – 2026",
-      gpa: null,
-      description: "Graduated 2026. Focused on full-stack development, machine learning, and AI applications. Served as Google Student Ambassador for Gemini, organising developer workshops and promoting AI adoption across campus.",
+      gpa: "9.1 CGPA",
+      description:
+        "Graduated 2026 with a 9.1 CGPA. Focused on full-stack development, machine learning, and AI applications. Served as Google Student Ambassador for Gemini, organising developer workshops and promoting AI adoption across campus.",
     },
     {
       institution: "Birla School, Pilani",
       degree: "Senior Secondary (CBSE)",
       period: "2022",
       gpa: null,
-      description: "Science stream with Mathematics, Physics, and Computer Science.",
+      description:
+        "Science stream with Mathematics, Physics, and Computer Science.",
     },
   ],
 
   achievements: [
+    {
+      title: "President, Nirmaan Organisation (BKBIET)",
+      org: "BKBIET",
+      year: "2025",
+    },
+    {
+      title: "Tech Lead, Google Developer Student Clubs",
+      org: "GDSC BKBIET",
+      year: "2024",
+    },
+    {
+      title: "Featured Developer on YouTube",
+      org: "Chai aur Code",
+      year: "2025",
+    },
     { title: "AWS APAC Solutions Architecture", org: "AWS", year: "2024" },
-    { title: "Deloitte Technology Job Simulation", org: "Deloitte", year: "2024" },
-    { title: "Deloitte Australia Cybersecurity Simulation", org: "Deloitte", year: "2024" },
+    {
+      title: "Deloitte Technology Job Simulation",
+      org: "Deloitte",
+      year: "2024",
+    },
+    {
+      title: "Deloitte Australia Cybersecurity Simulation",
+      org: "Deloitte",
+      year: "2024",
+    },
     { title: "HackerRank CSS Certification", org: "HackerRank", year: "2023" },
-    { title: "Complete Web Development Bootcamp", org: "Udemy / Hitesh Choudhary", year: "2023" },
+    {
+      title: "Complete Web Development Bootcamp",
+      org: "Udemy / Hitesh Choudhary",
+      year: "2023",
+    },
     { title: "Web Dev Cohort Live 1.0", org: "ChaiCode", year: "2024" },
     { title: "GenAI with JS", org: "ChaiCode", year: "2024" },
   ],
 
   nav: ["Home", "About", "Projects", "Experience", "Education", "Contact"],
-}
+};
