@@ -340,11 +340,6 @@ export const data = {
 
   achievements: [
     {
-      title: "President, Nirmaan Organisation (BKBIET)",
-      org: "BKBIET",
-      year: "2025",
-    },
-    {
       title: "Tech Lead, Google Developer Student Clubs",
       org: "GDSC BKBIET",
       year: "2024",
