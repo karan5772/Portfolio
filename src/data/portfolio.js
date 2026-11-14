@@ -97,6 +97,7 @@ export const data = {
     {
       title: "Astro AI",
       image: "https://astro.karanchoudhary.dev/og.png",
+      imageAspect: "2667 / 1715",
       description:
         "Vedic astrology platform powered by AI. Generates a full sidereal birth chart from your birth date, time, and location, then lets you ask anything by text or real-time voice, with answers grounded in your actual planetary positions.",
       tags: ["Next.js", "OpenAI", "Voice AI", "Vedic Charts", "Real-time"],
@@ -107,6 +108,7 @@ export const data = {
     {
       title: "Invoice Generator for Indian Freelancers",
       image: "https://invoice.karanchoudhary.dev/portfolio-image",
+      imageAspect: "1200 / 750",
       description:
         "Free, GST-aware invoice generator for Indian freelancers. Handles CGST/SGST vs IGST automatically, PAN-only invoices without a GSTIN, exports under LUT, TDS notes, and real vector PDF downloads. No sign-up, and data never leaves the browser.",
       tags: ["Next.js", "TypeScript", "Tailwind CSS", "react-pdf", "GST"],
@@ -117,6 +119,7 @@ export const data = {
     {
       title: "Bouquetgram",
       image: "/projects/bouquetgram-og.jpg",
+      imageAspect: "1200 / 630",
       description:
         "Send a digital bouquet as a link: pick flowers, write a card, add a song and a 30-second voice note. Free to send with no accounts; songs and voice notes are small paid extras. Cards live in D1, voice notes in R2, and extras are paid through Razorpay.",
       tags: [
@@ -135,6 +138,7 @@ export const data = {
     {
       title: "Icon Saloon Slot Booking",
       image: "/projects/iconsalon-og.png",
+      imageAspect: "1200 / 630",
       description:
         "Online slot reservations for a salon in Pilani. Customers pick services and a time, pay a reservation fee through Razorpay, and get a QR receipt. Slots are held for 5 minutes per attempt, payments are verified server-side, and the owner manages barbers, prices, services and days off from an admin panel. Rate-limited and D1-backed.",
       tags: ["Astro", "Cloudflare Workers", "D1", "Razorpay", "QR Codes"],
@@ -145,6 +149,7 @@ export const data = {
     {
       title: "GATE CSE Visual Notes",
       image: "/projects/gate-cse-notes-og.png",
+      imageAspect: "1200 / 630",
       description:
         "Visual, animated study notes for GATE Computer Science. Computer Organization & Architecture and Compiler Design are done, with 114 animated subtopics that walk through concepts step by step.",
       tags: ["React.js", "Vite", "Tailwind CSS", "Animation"],
@@ -155,6 +160,7 @@ export const data = {
     {
       title: "Basant Event Ticketing",
       image: "https://bkbietbasant.in/BASANT.png",
+      imageAspect: "3024 / 1964",
       description:
         "Production ticketing system for BKBIET's annual cultural festival. Three-part system: a ticket booking portal, an admin dashboard for inventory and sales, and a scanner app for real-time entry verification at the gate. Served 900+ users, processed over \u20b910 lakh in transactions, and scaled to 450+ requests per minute.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
@@ -165,6 +171,7 @@ export const data = {
     {
       title: "BKBIHE College Website",
       image: "https://bkbihe.vercel.app/og.png",
+      imageAspect: "3024 / 1666",
       description:
         "Complete institutional website covering 15+ pages: admissions, academics, faculty directory, infrastructure, research journal, and an AI-powered admission enquiry using Google Gemini.",
       tags: ["React.js", "TypeScript", "Google Gemini", "Tailwind CSS"],
@@ -175,6 +182,7 @@ export const data = {
     {
       title: "Loop Moto India",
       image: "https://loopmoto.vercel.app/og.png",
+      imageAspect: "2616 / 1526",
       description:
         "Product and marketing website for an ARAI-certified EV retrofitting company. Showcases electric retrofit kits for cycles, bikes, and commercial vehicles with specs, turnkey solutions, and a pan-India service network.",
       tags: ["React.js", "Vite", "CSS"],
@@ -208,6 +216,7 @@ export const data = {
       title: "MyTute AI",
       image:
         "https://raw.githubusercontent.com/karan5772/MyTute/refs/heads/main/frontend/public/Screenshot1.png",
+      imageAspect: "3024 / 1964",
       description:
         "RAG-based AI tutor that answers questions from user PDFs and YouTube transcripts using OpenAI and Qdrant. Features per-user ephemeral collections with session-based isolation and auto-clear on exit.",
       tags: [
@@ -226,6 +235,7 @@ export const data = {
       title: "Repo Review",
       image:
         "https://raw.githubusercontent.com/karan5772/ai-revierer/refs/heads/main/Screenshot%202026-05-24%20at%204.00.02%E2%80%AFPM.png",
+      imageAspect: "3024 / 1964",
       description:
         "AI-powered code review assistant that analyzes GitHub repositories using LLMs to provide actionable feedback, identify bugs, and visualize code quality metrics.",
       tags: ["React.js", "Node.js", "Express.js", "OpenAI SDK", "CodeMirror"],
@@ -246,6 +256,7 @@ export const data = {
       title: "QuizApp",
       image:
         "https://github.com/karan5772/quizApp/blob/main/Screenshot%202025-12-08%20at%204.13.06%E2%80%AFPM.png?raw=true",
+      imageAspect: "2550 / 1616",
       description:
         "Full-stack platform for coding and MCQ-based quizzes with analytics and performance tracking for students and educators.",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
@@ -266,6 +277,7 @@ export const data = {
     {
       title: "College Grievance Portal",
       image: "/projects/college-portal.jpg",
+      imageAspect: "1280 / 960",
       description:
         "Full-stack platform bridging the communication gap between students and faculty. Students raise grievances, faculty address them, with transparent status tracking and admin oversight throughout.",
       tags: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
