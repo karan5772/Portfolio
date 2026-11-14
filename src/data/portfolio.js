@@ -8,7 +8,7 @@ export const data = {
   email: "karankumar8239@gmail.com",
   phone: "+916350320901",
   resumeUrl:
-    "https://drive.google.com/file/d/1ZEeh9m7UDY9raQQiTN-6Hd6EEFCspGl2/view?usp=sharing",
+    "https://drive.google.com/file/d/1bQ72hZS1BKwvUG8EaOCIJu1IZX-QWBSQ/view?usp=sharing",
 
   roles: [
     "MERN Stack Developer",
